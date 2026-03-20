@@ -13,6 +13,7 @@
    👉 Criar variáveis de cor
 =============================== */
 :root {
+    --preto: 
     /* TODO: criar cores do projeto */
 }
 
@@ -24,6 +25,7 @@ body {
     display: flex;
     justify-content: center;
     padding: 40px 20px;
+    background-color: aliceblue;
 
     /* TODO: adicionar background bonito */
 }
@@ -33,8 +35,9 @@ body {
 =============================== */
 .container {
     width: 100%;
-    max-width: 600px;
-    padding: 20px;
+    max-width: 700px;
+    padding: 25px;
+    border-radius: 20px;
 }
 
 /* ===============================
