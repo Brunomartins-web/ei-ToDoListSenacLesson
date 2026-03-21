@@ -6,6 +6,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto Mono', monospace;
+    text-decoration: none;
 }
 
 /* ===============================
@@ -60,13 +61,46 @@ body {
 
 .header p{
     font-size: 15px;
+    color: #333;
 }
 /* ===============================
    🎯 DESAFIO 4 (CSS)
    👉 Criar layout dos CARDS
 =============================== */
 .stats {
-    margin: 20px 0;
+    display: flex;   /* 🔥 isso faz ficar lado a lado */
+    gap: 16px;       /* espaço entre os cards */
+}
+
+.card {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    flex: 1;
+    padding: 15px;
+    background: #f5f5f5;
+    border-radius: 10px;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.number {
+    color: var(--cor-primaria);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: justify;
+}
+
+.label {
+    color: var(--cor-secundaria);
+    align-items: center;
+    font-size: 14px;
+    color: #666;
 }
 
 /* ===============================
