@@ -165,15 +165,27 @@ body {
    🎯 DESAFIO 6 (CSS)
    👉 Estilizar tarefas
 =============================== */
-.tasks {
+.task {
+    background: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
     display: flex;
-    flex-direction: column;
-    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    cursor: pointer;
 }
 
-.task {
-    padding: 10px;
-    border: 1px solid #ccc;
+.task.completed span {
+    text-decoration: line-through;
+    color: #999;
+}
+
+.task button {
+    background: none;
+    border: none;
+    cursor: pointer;
 }
 
 /* Classe importante (JS usa!) */
