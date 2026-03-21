@@ -108,29 +108,58 @@ body {
 =============================== */
 .add-task {
     display: flex;
-    gap: 14px;
-    height: 12px;
+    gap: 10px;
+    margin-bottom: 20px;
 }
 
 .add-task input {
     flex: 1;
-    padding: 14px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
 }
 
 .btn-add {
-    display: flex;
-    align-items: center;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
     cursor: pointer;
-    padding: 14px;
 }
 
+.btn-add:hover {
+    background: #45a049;
+}
 /* ===============================
    🎯 DESAFIO 5 (CSS)
    👉 Estilizar filtros
 =============================== */
 .filters {
-    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    gap: 14px;
 }
+
+.filter,
+.filter-active {
+    flex: 1;
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+.filter {
+    background: #eee;
+}
+
+.filter-active {
+    background: #4CAF50;
+    color: white;
+}
+
 
 /* ===============================
    🎯 DESAFIO 6 (CSS)
